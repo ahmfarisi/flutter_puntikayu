@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_puntikayu/detail_screen.dart';
+import 'package:flutter_puntikayu/screens/detail_screen.dart';
 
 void main() {
   runApp(const MainApp());
