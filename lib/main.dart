@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_puntikayu/screens/detail_screen.dart';
+import 'package:flutter_puntikayu/screens/main_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: DetailScreen());
+    return MaterialApp(home: MainScreen());
   }
 }
