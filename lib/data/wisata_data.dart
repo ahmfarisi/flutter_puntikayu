@@ -1,154 +1,174 @@
 import 'package:flutter_puntikayu/models/wisata_model.dart';
 
-var wisataList =  [
+var wisataList = [
   WisataModel(
-    nama: 'Jembatan Ampera', 
-    alamat: 'Jl. Mayjen HM Ryacudu (atau Jl. Lintas Sumatra) – 16 Ilir, Kec. Ilir Timur I, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '24 jam (bebas biaya masuk)', 
-    instagram: '@jembatanampera_palembang', 
-    deskripsi: 'Ikon Kota Palembang yang membentang di atas Sungai Musi, panjang ±1.117 m, dibuka pada 10 November 1965 dan dulunya bagian tengahnya bisa diangkat untuk kapal besar. :contentReference[oaicite:1]{index=1}', 
-    gambarUtama: 'link-gambar-jembatan-ampera-utama', 
+    nama: 'Jembatan Ampera',
+    alamat:
+        'Jl. Letkol Iskandar, 16 Ilir, Kec. Ilir Timur I, Kota Palembang, Sumatera Selatan',
+    jamBuka: '24 Jam',
+    instagram: '@jembatanampera_palembang',
+    deskripsi:
+        'Jembatan Ampera adalah ikon utama Kota Palembang yang menghubungkan kawasan Seberang Ulu dan Seberang Ilir di atas Sungai Musi. Dibangun pada 1962 dan diresmikan pada 1965, jembatan ini dahulu bisa diangkat agar kapal besar dapat melintas. Kini Ampera menjadi pusat aktivitas wisata malam dengan pemandangan indah lampu kota yang berkilau di permukaan Sungai Musi.',
+    gambarUtama: 'link-gambar-jembatan-ampera-utama',
     gambarGaleri: [
       'link-gambar-jembatan-ampera-1',
       'link-gambar-jembatan-ampera-2',
       'link-gambar-jembatan-ampera-3',
       'link-gambar-jembatan-ampera-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Benteng Kuto Besak', 
-    alamat: 'Jl. Sultan Mahmud Badarudin, 19 Ilir, Bukit Kecil, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '06.00-22.00 WIB', 
-    instagram: '@bentengkutobesak_palembang', 
-    deskripsi: 'Benteng peninggalan Kesultanan Palembang Darussalam yang dibangun abad ke-18, berlokasi di tepi Sungai Musi. Dibangun oleh Sultan Mahmud Badaruddin I dan selesai di masa Sultan Muhammad Bahaudin. :contentReference[oaicite:3]{index=3}', 
-    gambarUtama: 'link-gambar-benteng-kuto-besak-utama', 
+    nama: 'Benteng Kuto Besak',
+    alamat:
+        'Jl. Sultan Mahmud Badaruddin, 19 Ilir, Bukit Kecil, Kota Palembang, Sumatera Selatan',
+    jamBuka: '06.00 - 22.00 WIB',
+    instagram: '@bentengkutobesak_palembang',
+    deskripsi:
+        'Benteng Kuto Besak merupakan peninggalan Kesultanan Palembang Darussalam yang dibangun pada abad ke-18. Dinding tebal dan arsitektur kokohnya menjadi saksi sejarah kejayaan kerajaan Palembang. Terletak di tepi Sungai Musi, benteng ini kini menjadi spot wisata sejarah dan fotografi populer dengan pemandangan langsung ke Jembatan Ampera.',
+    gambarUtama: 'link-gambar-benteng-kuto-besak-utama',
     gambarGaleri: [
       'link-gambar-benteng-kuto-besak-1',
       'link-gambar-benteng-kuto-besak-2',
       'link-gambar-benteng-kuto-besak-3',
       'link-gambar-benteng-kuto-besak-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Pulau Kemaro', 
-    alamat: 'Jl. Pulau Kemaro, Kec. Ilir Timur II, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '24 jam / akses kapal pagi s.d sore', 
-    instagram: '@pulaukemaro_palembang', 
-    deskripsi: 'Pulau kecil legendaris di tengah Sungai Musi, sekitar 6 km dari Jembatan Ampera, dengan legenda cinta Tan Bun An & Siti Fatimah, dan terdapat klenteng serta pagoda yang menjadi daya tarik. :contentReference[oaicite:4]{index=4}', 
-    gambarUtama: 'link-gambar-pulau-kemaro-utama', 
+    nama: 'Pulau Kemaro',
+    alamat:
+        'Jl. Pulau Kemaro, Kec. Ilir Timur II, Kota Palembang, Sumatera Selatan',
+    jamBuka: '07.00 - 18.00 WIB',
+    instagram: '@pulaukemaro_palembang',
+    deskripsi:
+        'Pulau kecil di tengah Sungai Musi ini terkenal dengan legenda cinta Siti Fatimah dan Tan Bun An. Di pulau ini berdiri pagoda sembilan lantai dan klenteng tua yang menjadi pusat perayaan Cap Go Meh. Selain nilai sejarah dan budaya Tionghoa yang kuat, Pulau Kemaro juga menawarkan suasana tenang dan pemandangan sungai yang menawan.',
+    gambarUtama: 'link-gambar-pulau-kemaro-utama',
     gambarGaleri: [
       'link-gambar-pulau-kemaro-1',
       'link-gambar-pulau-kemaro-2',
       'link-gambar-pulau-kemaro-3',
       'link-gambar-pulau-kemaro-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Jakabaring Sport City', 
-    alamat: 'Kawasan Jakabaring, Kecamatan Seberang Ulu I, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '08.00-18.00 WIB (tergantung fasilitas)', 
-    instagram: '@jakabaringsportcity', 
-    deskripsi: 'Kompleks olahraga terpadu di Palembang yang sering digunakan untuk event nasional dan internasional; destinasi menarik untuk olahraga, rekreasi dan foto. (Data spesifik buka per fasilitas perlu dicek).', 
-    gambarUtama: 'link-gambar-jakabaring-utama', 
+    nama: 'Jakabaring Sport City',
+    alamat:
+        'Jl. Gubernur H. Bastari, Seberang Ulu I, Kota Palembang, Sumatera Selatan',
+    jamBuka: '08.00 - 18.00 WIB',
+    instagram: '@jakabaringsportcity',
+    deskripsi:
+        'Jakabaring Sport City adalah kompleks olahraga terbesar di Sumatera Selatan. Tempat ini memiliki berbagai fasilitas internasional seperti stadion, arena akuatik, lintasan atletik, dan danau buatan. Selain menjadi lokasi ajang olahraga besar, kawasan ini juga sering digunakan untuk rekreasi, bersepeda, dan menikmati suasana sore Palembang.',
+    gambarUtama: 'link-gambar-jakabaring-utama',
     gambarGaleri: [
       'link-gambar-jakabaring-1',
       'link-gambar-jakabaring-2',
       'link-gambar-jakabaring-3',
       'link-gambar-jakabaring-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Taman Wisata Purbakala', 
-    alamat: '– (harap lengkapi alamat spesifik di Palembang)', 
-    jamBuka: '09.00-17.00 WIB', 
-    instagram: '@tamanwisatapurbakala_palembang', 
-    deskripsi: 'Taman wisata yang menyajikan situs-purbakala dan peninggalan sejarah di Palembang. (Mohon cek untuk nama lengkap & alamat agar lebih spesifik.)', 
-    gambarUtama: 'link-gambar-taman-wisata-purbakala-utama', 
+    nama: 'Taman Wisata Purbakala',
+    alamat:
+        'Jl. Syakyakirti, Gandus, Kota Palembang, Sumatera Selatan',
+    jamBuka: '08.00 - 17.00 WIB',
+    instagram: '@tamanpurbakala_palembang',
+    deskripsi:
+        'Taman Wisata Purbakala Sriwijaya merupakan kawasan situs arkeologi peninggalan Kerajaan Sriwijaya. Di sini pengunjung dapat melihat reruntuhan candi, kolam kuno, serta museum kecil yang menyimpan artefak sejarah. Suasana asri dan rindang menjadikannya tempat edukasi sejarah sekaligus rekreasi keluarga yang menarik.',
+    gambarUtama: 'link-gambar-taman-purbakala-utama',
     gambarGaleri: [
-      'link-gambar-taman-wisata-purbakala-1',
-      'link-gambar-taman-wisata-purbakala-2',
-      'link-gambar-taman-wisata-purbakala-3',
-      'link-gambar-taman-wisata-purbakala-4',
+      'link-gambar-taman-purbakala-1',
+      'link-gambar-taman-purbakala-2',
+      'link-gambar-taman-purbakala-3',
+      'link-gambar-taman-purbakala-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Bukit Siguntang', 
-    alamat: 'Bukit Siguntang, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '06.00-18.00 WIB', 
-    instagram: '@bukitsiguntang_palembang', 
-    deskripsi: 'Bukit yang memiliki nilai sejarah tinggi bagi Kota Palembang dan Kerajaan Sriwijaya; tempat panorama kota dari ketinggian dan situs makam kuno. (Detail sejarah bisa ditambahkan).', 
-    gambarUtama: 'link-gambar-bukit-siguntang-utama', 
+    nama: 'Bukit Siguntang',
+    alamat:
+        'Jl. Siguntang, Bukit Lama, Ilir Barat I, Kota Palembang, Sumatera Selatan',
+    jamBuka: '06.00 - 18.00 WIB',
+    instagram: '@bukitsiguntang_palembang',
+    deskripsi:
+        'Bukit Siguntang adalah situs bersejarah yang diyakini sebagai pusat spiritual Kerajaan Sriwijaya. Di kawasan ini terdapat makam tokoh-tokoh kuno serta pemandangan kota dari ketinggian. Dengan suasana tenang dan pepohonan rindang, tempat ini cocok untuk wisata religi dan edukasi sejarah Palembang.',
+    gambarUtama: 'link-gambar-bukit-siguntang-utama',
     gambarGaleri: [
       'link-gambar-bukit-siguntang-1',
       'link-gambar-bukit-siguntang-2',
       'link-gambar-bukit-siguntang-3',
       'link-gambar-bukit-siguntang-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Masjid Cheng Ho', 
-    alamat: 'Kompleks Perumahan Amin Mulia, Kel. 15 Ulu, Kec. Seberang Ulu I, Kota Palembang, Sumatera Selatan', 
-    jamBuka: 'Hari/hari (akses wisata religius) 08.00-17.00 WIB', 
-    instagram: '@masjidchengho_palembang', 
-    deskripsi: 'Masjid yang menjadi simbol akulturasi budaya Islam, Tionghoa dan lokal di Palembang; berdiri tahun 2008 atas prakarsa komunitas China Muslim di Palembang. :contentReference[oaicite:5]{index=5}', 
-    gambarUtama: 'link-gambar-masjid-cheng-ho-utama', 
+    nama: 'Masjid Cheng Ho',
+    alamat:
+        'Kompleks Perumahan Amin Mulia, 15 Ulu, Seberang Ulu I, Kota Palembang, Sumatera Selatan',
+    jamBuka: '08.00 - 17.00 WIB',
+    instagram: '@masjidchengho_palembang',
+    deskripsi:
+        'Masjid Cheng Ho Palembang memadukan gaya arsitektur Tionghoa, Arab, dan Nusantara. Didirikan tahun 2008 oleh komunitas Tionghoa Muslim, masjid ini menjadi simbol kerukunan dan akulturasi budaya. Warna merah-hijau khas Tiongkok dan ornamen kaligrafi menjadikannya spot foto favorit wisatawan.',
+    gambarUtama: 'link-gambar-masjid-cheng-ho-utama',
     gambarGaleri: [
       'link-gambar-masjid-cheng-ho-1',
       'link-gambar-masjid-cheng-ho-2',
       'link-gambar-masjid-cheng-ho-3',
       'link-gambar-masjid-cheng-ho-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Bayt Al-Qur\'an Palembang', 
-    alamat: 'Jalan Moh. Amin, Kec. Gandus, Kota Palembang, Sumatera Selatan', 
-    jamBuka: '09.00-17.00 WIB', 
-    instagram: '@baytalquran_palembang', 
-    deskripsi: 'Wisata religi yang menampilkan mushaf Al-Qur’an “raksasa” di lembaran kayu tembesu, terkenal sebagai museum/rumah Al-Qur’an terbesar di dunia di Palembang. :contentReference[oaicite:6]{index=6}', 
-    gambarUtama: 'link-gambar-bayt-al-quran-utama', 
+    nama: 'Bayt Al-Qur\'an Palembang',
+    alamat:
+        'Jl. Moh. Amin, Gandus, Kota Palembang, Sumatera Selatan',
+    jamBuka: '09.00 - 17.00 WIB',
+    instagram: '@baytalquran_palembang',
+    deskripsi:
+        'Bayt Al-Qur\'an Al-Akbar adalah museum Al-Qur\'an terbesar di dunia yang memamerkan ayat-ayat suci diukir pada lembaran kayu tembesu. Bangunan lima lantainya menampilkan karya seni Islam yang menakjubkan dan menjadi destinasi religi utama di Palembang.',
+    gambarUtama: 'link-gambar-bayt-al-quran-utama',
     gambarGaleri: [
       'link-gambar-bayt-al-quran-1',
       'link-gambar-bayt-al-quran-2',
       'link-gambar-bayt-al-quran-3',
       'link-gambar-bayt-al-quran-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Museum Balaputra Dewa', 
-    alamat: 'Jl. … (harap lengkapi alamat museum di Palembang)', 
-    jamBuka: '08.00-16.00 WIB', 
-    instagram: '@museum_balaputra_dewa_palembang', 
-    deskripsi: 'Museum sejarah di Palembang yang menyimpan artefak-kerajaan dan sejarah lokal (lengkapi detail sesuai sumber).', 
-    gambarUtama: 'link-gambar-museum-balaputra-dewa-utama', 
+    nama: 'Museum Balaputra Dewa',
+    alamat:
+        'Jl. Srijaya No. 288, KM 5.5, Kec. Alang-Alang Lebar, Kota Palembang, Sumatera Selatan',
+    jamBuka: '08.00 - 16.00 WIB',
+    instagram: '@museum_balaputrdewa',
+    deskripsi:
+        'Museum Balaputra Dewa menyimpan koleksi benda-benda sejarah, arkeologi, dan etnografi khas Sumatera Selatan. Di dalamnya terdapat rumah adat limas asli dan peninggalan masa Sriwijaya. Museum ini menjadi tempat edukasi budaya yang wajib dikunjungi bagi pecinta sejarah.',
+    gambarUtama: 'link-gambar-museum-balaputra-dewa-utama',
     gambarGaleri: [
       'link-gambar-museum-balaputra-dewa-1',
       'link-gambar-museum-balaputra-dewa-2',
       'link-gambar-museum-balaputra-dewa-3',
       'link-gambar-museum-balaputra-dewa-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
   WisataModel(
-    nama: 'Museum Monpera', 
-    alamat: 'Jl. … (harap lengkapi alamat museum monpera di Palembang)', 
-    jamBuka: '08.00-16.00 WIB', 
-    instagram: '@museum_monpera_palembang', 
-    deskripsi: 'Museum yang berdiri di bekas gedung Markas Besar Divisi III/IV Sriwijaya – Monpera (Monumen Perjuangan Rakyat), menyajikan sejarah perjuangan kemerdekaan di Palembang. (Detail bisa diperluas).', 
-    gambarUtama: 'link-gambar-museum-monpera-utama', 
+    nama: 'Museum Monpera',
+    alamat:
+        'Jl. Merdeka, 19 Ilir, Bukit Kecil, Kota Palembang, Sumatera Selatan',
+    jamBuka: '08.00 - 16.00 WIB',
+    instagram: '@museum_monpera_palembang',
+    deskripsi:
+        'Museum Monumen Perjuangan Rakyat (Monpera) dibangun untuk mengenang perjuangan rakyat Sumatera Selatan melawan penjajah. Bangunannya berdiri megah di pusat kota dengan bentuk menyerupai piramida. Koleksi di dalamnya meliputi foto, senjata, dan benda sejarah perjuangan kemerdekaan.',
+    gambarUtama: 'link-gambar-museum-monpera-utama',
     gambarGaleri: [
       'link-gambar-museum-monpera-1',
       'link-gambar-museum-monpera-2',
       'link-gambar-museum-monpera-3',
       'link-gambar-museum-monpera-4',
     ],
-    isFavroite: false
+    isFavroite: false,
   ),
 ];
