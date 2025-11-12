@@ -6,7 +6,7 @@ class WisataModel {
   final String deskripsi;
   final String gambarUtama;
   final List<String> gambarGaleri;
-  bool isFavroite;
+  bool isFavorite;
 
   WisataModel({
     required this.nama, 
@@ -16,7 +16,7 @@ class WisataModel {
     required this.deskripsi, 
     required this.gambarUtama, 
     required this.gambarGaleri,
-    this.isFavroite = false,
+    this.isFavorite = false,
   });
   
   

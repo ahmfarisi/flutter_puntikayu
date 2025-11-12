@@ -16,7 +16,7 @@ var wisataList = [
       'link-gambar-jembatan-ampera-3',
       'link-gambar-jembatan-ampera-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Benteng Kuto Besak',
@@ -33,7 +33,7 @@ var wisataList = [
       'link-gambar-benteng-kuto-besak-3',
       'link-gambar-benteng-kuto-besak-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Pulau Kemaro',
@@ -50,7 +50,7 @@ var wisataList = [
       'link-gambar-pulau-kemaro-3',
       'link-gambar-pulau-kemaro-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Jakabaring Sport City',
@@ -67,7 +67,7 @@ var wisataList = [
       'link-gambar-jakabaring-3',
       'link-gambar-jakabaring-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Taman Wisata Purbakala',
@@ -84,7 +84,7 @@ var wisataList = [
       'link-gambar-taman-purbakala-3',
       'link-gambar-taman-purbakala-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Bukit Siguntang',
@@ -101,7 +101,7 @@ var wisataList = [
       'link-gambar-bukit-siguntang-3',
       'link-gambar-bukit-siguntang-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Masjid Cheng Ho',
@@ -118,7 +118,7 @@ var wisataList = [
       'link-gambar-masjid-cheng-ho-3',
       'link-gambar-masjid-cheng-ho-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Bayt Al-Qur\'an Palembang',
@@ -135,7 +135,7 @@ var wisataList = [
       'link-gambar-bayt-al-quran-3',
       'link-gambar-bayt-al-quran-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Museum Balaputra Dewa',
@@ -152,7 +152,7 @@ var wisataList = [
       'link-gambar-museum-balaputra-dewa-3',
       'link-gambar-museum-balaputra-dewa-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
   WisataModel(
     nama: 'Museum Monpera',
@@ -169,6 +169,6 @@ var wisataList = [
       'link-gambar-museum-monpera-3',
       'link-gambar-museum-monpera-4',
     ],
-    isFavroite: false,
+    isFavorite: false,
   ),
 ];
