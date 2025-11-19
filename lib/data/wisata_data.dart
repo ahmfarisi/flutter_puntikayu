@@ -37,14 +37,14 @@ var wisataList = [
     isFavorite: false,
   ),
   WisataModel(
-    nama: 'images/pulau_kemaro.jpeg',
+    nama: 'Pulau Kemaro',
     alamat:
         'Jl. Pulau Kemaro, Kec. Ilir Timur II, Kota Palembang, Sumatera Selatan',
     jamBuka: '07.00 - 18.00 WIB',
     instagram: '@kampungair_pulaukemaro',
     deskripsi:
         'Pulau kecil di tengah Sungai Musi ini terkenal dengan legenda cinta Siti Fatimah dan Tan Bun An. Di pulau ini berdiri pagoda sembilan lantai dan klenteng tua yang menjadi pusat perayaan Cap Go Meh. Selain nilai sejarah dan budaya Tionghoa yang kuat, Pulau Kemaro juga menawarkan suasana tenang dan pemandangan sungai yang menawan.',
-    gambarUtama: 'link-gambar-pulau-kemaro-utama',
+    gambarUtama: 'images/pulau_kemaro.jpg',
     gambarGaleri: [     
 'https://asset.kompas.com/crops/l5NCFffslFAhG1EmvXq7xQiqCeI=/0x0:780x390/780x390/data/photo/2014/01/28/1702585kelenteng-22780x390.jpg',
    'https://indonesia.go.id/assets/upload/headline/1613092434_zvzz_thumb.jpeg',    
@@ -144,7 +144,7 @@ var wisataList = [
     instagram: '@museum_balaputradewa',
     deskripsi:
         'Museum Balaputra Dewa di Palembang adalah museum etnografi yang menampilkan sejarah dan tradisi Provinsi Sumatera Selatan dari zaman prasejarah hingga kolonialisme, dengan koleksi yang mencakup artefak prasejarah, peninggalan Kerajaan Sriwijaya (termasuk replika prasasti), koleksi Kesultanan Palembang seperti songket, dan daya tarik utama berupa Rumah Limas di halaman belakang.',
-    gambarUtama: 'image/museum_balaputera_dewa.png',
+    gambarUtama: 'images/museum_balaputera_dewa.png',
     gambarGaleri: [
       'https://cdn.antaranews.com/cache/1200x800/2023/04/30/20230430_214806.jpg',
       'https://cdn.antaranews.com/cache/1200x800/2024/11/15/5003C651-1122-441F-9ED3-82B4527717D0.jpeg',
