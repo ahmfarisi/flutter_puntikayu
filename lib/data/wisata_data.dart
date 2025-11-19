@@ -154,7 +154,7 @@ var wisataList = [
     isFavorite: false,
   ),
   WisataModel(
-    nama: 'Taman Wisata Alam Punti Kayu',
+    nama: 'Taman Wisata Punti Kayu',
     alamat:'Jl. Kolonel H. Burlian, Km. 6,5, Karya Baru, Alang-Alang Lebar, Kota Palembang, Sumatera Selatan',
     jamBuka: '08.00 - 17.00 WIB',
     instagram: '@tamanpuntikayu_palembang',
