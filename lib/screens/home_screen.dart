@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_puntikayu/data/wisata_data.dart';
 import 'package:flutter_puntikayu/models/wisata_model.dart';
+import 'package:flutter_puntikayu/screens/detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -22,38 +23,48 @@ class HomeScreen extends StatelessWidget {
           itemCount: wisataList.length,
           itemBuilder: (context, index) {
             WisataModel wisataModel = wisataList[index];
-            return Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(16),
-              ),
-              elevation: 1,
-              child: Column(
-                children: [
-                  //Gambar Utama Tempat Wisata
-                  Expanded(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16), 
-                        topRight: Radius.circular(16)
-                      ),
-                      child: Image.asset(
-                        wisataModel.gambarUtama,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  //Nama Tempat Wisata
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      wisataModel.nama,
-                      style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold
-                      ),
-                    ),
+            return InkWell(
+              onTap: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(wisataModel: wisataModel),
                   )
-                ],
+                );
+              },
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                elevation: 1,
+                child: Column(
+                  children: [
+                    //Gambar Utama Tempat Wisata
+                    Expanded(
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16), 
+                          topRight: Radius.circular(16)
+                        ),
+                        child: Image.asset(
+                          wisataModel.gambarUtama,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    //Nama Tempat Wisata
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        wisataModel.nama,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             );
           },
