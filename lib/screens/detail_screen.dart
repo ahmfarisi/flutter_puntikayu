@@ -68,12 +68,34 @@ class _DetailScreenState extends State<DetailScreen> {
                     )
                   ],
                 ),
+              ),
+              // INFORMASI ALAMAT, JAM BUKA, DAN INSTAGRAM
+              // Alamat
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Icon(
+                      Icons.location_on,
+                      color: Colors.red,
+                    ),
+                    Text(
+                      ' Alamat',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(width: 24),
+                    Text(':'),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(widget.wisataModel.alamat)
+                    )
+                  ],
+                ),
               )
-              // ALAMAT
+              // Jam Buka
           
-              // JAM BUKA
-          
-              // INSTAGRAM
+              // Instagram
           
               // DESKRIPSI
           
