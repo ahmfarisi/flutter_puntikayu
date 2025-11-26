@@ -72,7 +72,7 @@ class _DetailScreenState extends State<DetailScreen> {
               // INFORMASI ALAMAT, JAM BUKA, DAN INSTAGRAM
               // Alamat
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -81,7 +81,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       color: Colors.red,
                     ),
                     SizedBox(
-                      width: 70,
+                      width: 80,
                       child: Text(
                         ' Alamat',
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -95,8 +95,56 @@ class _DetailScreenState extends State<DetailScreen> {
                   ],
                 ),
               ),
+              // Jam Buka
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Icon(
+                      Icons.access_time,
+                      color: Colors.blue,
+                    ),
+                    SizedBox(
+                      width: 80,
+                      child: Text(
+                        ' Jam Buka',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(':'),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(widget.wisataModel.jamBuka)
+                    )
+                  ],
+                ),
+              ),
               // Instagram
-          
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Icon(
+                      Icons.video_label,
+                      color: Colors.green,
+                    ),
+                    SizedBox(
+                      width: 80,
+                      child: Text(
+                        ' Instagram',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Text(':'),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(widget.wisataModel.instagram)
+                    )
+                  ],
+                ),
+              ),
               // DESKRIPSI
           
               // GAMBAR GALERI
