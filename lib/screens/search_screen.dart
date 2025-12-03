@@ -23,6 +23,7 @@ class _SearchScreenState extends State<SearchScreen> {
   void dispose() {
     _txtSearch.removeListener(_filterWisataProcess);
     _txtSearch.dispose();
+    super.dispose();
   }
 
   void _filterWisataProcess() {
