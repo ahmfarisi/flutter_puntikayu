@@ -104,7 +104,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     SizedBox(
                       width: 80,
                       child: Text(
-                        ' Jam Buka',
+                        ' Buka',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
@@ -127,7 +127,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     SizedBox(
                       width: 80,
                       child: Text(
-                        ' Instagram',
+                        ' IG',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),

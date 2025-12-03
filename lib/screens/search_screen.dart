@@ -17,6 +17,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   void initState() {
     _txtSearch.addListener(_filterWisataProcess);
+    super.initState();
   }
 
   @override
