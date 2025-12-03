@@ -1,6 +1,5 @@
 import 'package:flutter_puntikayu/models/wisata_model.dart';
 
-
 var wisataList = [
   WisataModel(
     nama: 'Jembatan Ampera',
@@ -28,11 +27,11 @@ var wisataList = [
     deskripsi:
         'Benteng Kuto Besak merupakan peninggalan Kesultanan Palembang Darussalam yang dibangun pada abad ke-18. Dinding tebal dan arsitektur kokohnya menjadi saksi sejarah kejayaan kerajaan Palembang. Terletak di tepi Sungai Musi, benteng ini kini menjadi spot wisata sejarah dan fotografi populer dengan pemandangan langsung ke Jembatan Ampera.',
     gambarUtama: 'images/bkb.jpg',
-    gambarGaleri: [ 'https://thumb.viva.id/intipseleb/1265x711/2024/07/10/668dee30adbbf-benteng-kuto-besak-palembang.jpg',
+    gambarGaleri: [
+      'https://thumb.viva.id/intipseleb/1265x711/2024/07/10/668dee30adbbf-benteng-kuto-besak-palembang.jpg',
       'https://1.bp.blogspot.com/-m19L-iEt95Q/WtBwCnrFTWI/AAAAAAAAAlg/3VSF4MwaPi05XjHYEsZkeeKngwy9v8UuQCLcBGAs/s1600/benteng-kuto-besak.jpg'
-  
-'https://salsawisata.com/wp-content/uploads/2022/04/Benteng-Kuto-Besak.jpg'
-    'https://cdn.timesmedia.co.id/images/2021/09/28/Benteng-Kuto-Besak-merupakan-kraton-yang-menjadi-pusat-Kesultanan-Palembang-pada-Abad-XVII.jpg',
+          'https://salsawisata.com/wp-content/uploads/2022/04/Benteng-Kuto-Besak.jpg'
+          'https://cdn.timesmedia.co.id/images/2021/09/28/Benteng-Kuto-Besak-merupakan-kraton-yang-menjadi-pusat-Kesultanan-Palembang-pada-Abad-XVII.jpg',
     ],
     isFavorite: false,
   ),
@@ -45,11 +44,11 @@ var wisataList = [
     deskripsi:
         'Pulau kecil di tengah Sungai Musi ini terkenal dengan legenda cinta Siti Fatimah dan Tan Bun An. Di pulau ini berdiri pagoda sembilan lantai dan klenteng tua yang menjadi pusat perayaan Cap Go Meh. Selain nilai sejarah dan budaya Tionghoa yang kuat, Pulau Kemaro juga menawarkan suasana tenang dan pemandangan sungai yang menawan.',
     gambarUtama: 'images/pulau_kemaro.jpg',
-    gambarGaleri: [     
-'https://asset.kompas.com/crops/l5NCFffslFAhG1EmvXq7xQiqCeI=/0x0:780x390/780x390/data/photo/2014/01/28/1702585kelenteng-22780x390.jpg',
-   'https://indonesia.go.id/assets/upload/headline/1613092434_zvzz_thumb.jpeg',    
-  'https://awsimages.detik.net.id/community/media/visual/2024/02/23/suasana-ramai-di-malam-puncak-perayaan-cap-go-meh-di-pulau-kemaro-palembang_169.jpeg?w=600&q=90',
-     'https://backpackerjakarta.com/wp-content/uploads/2016/09/Pulau-Kemaro-Palembang.jpg',
+    gambarGaleri: [
+      'https://asset.kompas.com/crops/l5NCFffslFAhG1EmvXq7xQiqCeI=/0x0:780x390/780x390/data/photo/2014/01/28/1702585kelenteng-22780x390.jpg',
+      'https://indonesia.go.id/assets/upload/headline/1613092434_zvzz_thumb.jpeg',
+      'https://awsimages.detik.net.id/community/media/visual/2024/02/23/suasana-ramai-di-malam-puncak-perayaan-cap-go-meh-di-pulau-kemaro-palembang_169.jpeg?w=600&q=90',
+      'https://backpackerjakarta.com/wp-content/uploads/2016/09/Pulau-Kemaro-Palembang.jpg',
     ],
     isFavorite: false,
   ),
@@ -72,8 +71,7 @@ var wisataList = [
   ),
   WisataModel(
     nama: 'Taman Wisata Purbakala',
-    alamat:
-        'Jl. Syakyakirti, Gandus, Kota Palembang, Sumatera Selatan',
+    alamat: 'Jl. Syakyakirti, Gandus, Kota Palembang, Sumatera Selatan',
     jamBuka: '08.00 - 17.00 WIB',
     instagram: '@tamanpurbakala_palembang',
     deskripsi:
@@ -83,7 +81,7 @@ var wisataList = [
       'https://indonesiakaya.com/wp-content/uploads/2020/10/Taman_Purbakala_Kerajaan_Sriwijaya_TPKS_1200.jpg',
       'https://ik.trn.asia/uploads/2023/06/1687261176498.jpeg',
       'https://ik.imagekit.io/tvlk/blog/2024/03/qKEEodJi-image.png',
-     'https://www.rumah123.com/seo-cms/assets/Terdapat_Parit_dan_Kanal_01c2d0914b/Terdapat_Parit_dan_Kanal_01c2d0914b.jpg',
+      'https://www.rumah123.com/seo-cms/assets/Terdapat_Parit_dan_Kanal_01c2d0914b/Terdapat_Parit_dan_Kanal_01c2d0914b.jpg',
     ],
     isFavorite: false,
   ),
@@ -96,9 +94,11 @@ var wisataList = [
     deskripsi:
         'Bukit Siguntang adalah situs bersejarah yang diyakini sebagai pusat spiritual Kerajaan Sriwijaya. Di kawasan ini terdapat makam tokoh-tokoh kuno serta pemandangan kota dari ketinggian. Dengan suasana tenang dan pepohonan rindang, tempat ini cocok untuk wisata religi dan edukasi sejarah Palembang.',
     gambarUtama: 'images/bukit_siguntang.jpg',
-    gambarGaleri: [ 'https://indonesiakaya.com/wp-content/uploads/2020/10/5__IMG_4112_Kawasan_Bukit_Siguntang_kerap_menjadi_salah_satu_destinasi_wisata_sejarah_dan_budaya_yang_banyak_dikunjungi_di_Palembang_2.jpg',
-'https://awsimages.detik.net.id/community/media/visual/2023/06/08/taman-purbakala-bukit-siguntang_169.jpeg?w=1200',      'https://image.idntimes.com/post/20241211/1000561898-3a1510d6f06dfb42cc2b8366c72416bb.jpg',
-'https://ik.trn.asia/uploads/2022/11/1668163534132.jpeg?tr=w-995',
+    gambarGaleri: [
+      'https://indonesiakaya.com/wp-content/uploads/2020/10/5__IMG_4112_Kawasan_Bukit_Siguntang_kerap_menjadi_salah_satu_destinasi_wisata_sejarah_dan_budaya_yang_banyak_dikunjungi_di_Palembang_2.jpg',
+      'https://awsimages.detik.net.id/community/media/visual/2023/06/08/taman-purbakala-bukit-siguntang_169.jpeg?w=1200',
+      'https://image.idntimes.com/post/20241211/1000561898-3a1510d6f06dfb42cc2b8366c72416bb.jpg',
+      'https://ik.trn.asia/uploads/2022/11/1668163534132.jpeg?tr=w-995',
     ],
     isFavorite: false,
   ),
@@ -121,8 +121,7 @@ var wisataList = [
   ),
   WisataModel(
     nama: 'Bayt Al-Qur\'an Palembang',
-    alamat:
-        'Jl. Moh. Amin, Gandus, Kota Palembang, Sumatera Selatan',
+    alamat: 'Jl. Moh. Amin, Gandus, Kota Palembang, Sumatera Selatan',
     jamBuka: '09.00 - 17.00 WIB',
     instagram: '@baitalquranalakbar',
     deskripsi:
@@ -155,7 +154,8 @@ var wisataList = [
   ),
   WisataModel(
     nama: 'Taman Wisata Punti Kayu',
-    alamat:'Jl. Kolonel H. Burlian, Km. 6,5, Karya Baru, Alang-Alang Lebar, Kota Palembang, Sumatera Selatan',
+    alamat:
+        'Jl. Kolonel H. Burlian, Km. 6,5, Karya Baru, Alang-Alang Lebar, Kota Palembang, Sumatera Selatan',
     jamBuka: '08.00 - 17.00 WIB',
     instagram: '@tamanpuntikayu_palembang',
     deskripsi:
@@ -163,16 +163,10 @@ var wisataList = [
     gambarUtama: 'images/puntikayu.jpg',
     gambarGaleri: [
       'https://sumselupdate.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-16-at-16.20.58.jpeg',
-  'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8JEYXNsT-_1qlQAW9cDEw2YieRUrbEDCVgWsW8XRIhn3haBqh3Eao6xyHXUChJGwDwgiXNtAtdvRueBrfK7hyotdudOacDVTk32dDyK2_UWy-C9UUUe80MACI7x7a9HcD39I30JZwfrIQ/s500/hutan-wisata-punti-kayu.jpg',
+      'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8JEYXNsT-_1qlQAW9cDEw2YieRUrbEDCVgWsW8XRIhn3haBqh3Eao6xyHXUChJGwDwgiXNtAtdvRueBrfK7hyotdudOacDVTk32dDyK2_UWy-C9UUUe80MACI7x7a9HcD39I30JZwfrIQ/s500/hutan-wisata-punti-kayu.jpg',
       'https://www.indonesia.travel/contentassets/7e14d37452684004ae49b3d861a36425/jcr_content-41.jpg',
-  'https://asset-2.tribunnews.com/sumsel/foto/bank/images/hutan-kota-wisata-punti-kayu-selasa.jpg',
+      'https://asset-2.tribunnews.com/sumsel/foto/bank/images/hutan-kota-wisata-punti-kayu-selasa.jpg',
     ],
     isFavorite: false,
   ),
 ];
-
-
-	
-
-
-

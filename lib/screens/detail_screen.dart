@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_puntikayu/models/wisata_model.dart';
 
@@ -199,11 +200,18 @@ class _DetailScreenState extends State<DetailScreen> {
                             padding: const EdgeInsets.only(right: 8),
                             child: ClipRRect(
                               borderRadius: BorderRadiusGeometry.circular(15),
-                              child: Image.network(
-                                widget.wisataModel.gambarGaleri[index],
-                                fit: BoxFit.cover,
-                                height: 100,
+                              child: CachedNetworkImage(
+                                imageUrl:
+                                    widget.wisataModel.gambarGaleri[index],
+                                placeholder: (context, url) => Transform.scale(
+                                  scale: 0.2,
+                                  child: const CircularProgressIndicator(),
+                                ),
+                                errorWidget: (context, url, error) =>
+                                    const Icon(Icons.error),
                                 width: 150,
+                                height: 100,
+                                fit: BoxFit.cover,
                               ),
                             ),
                           );
