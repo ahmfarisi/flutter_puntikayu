@@ -167,6 +167,52 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
               ),
               // GAMBAR GALERI
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 16,
+                  left: 16,
+                  right: 16,
+                  bottom: 0,
+                ),
+                child: Divider(color: Colors.grey.shade300),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Galeri',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    SizedBox(
+                      height: 150,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: widget.wisataModel.gambarGaleri.length,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadiusGeometry.circular(15),
+                              child: Image.network(
+                                widget.wisataModel.gambarGaleri[index],
+                                fit: BoxFit.cover,
+                                height: 100,
+                                width: 150,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
