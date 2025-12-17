@@ -17,9 +17,10 @@ class _DetailScreenState extends State<DetailScreen> {
   Future<void> _launchGoogleMaps() async {
     final String koordinat = widget.wisataModel.koordinat;
     final Uri tautan = Uri.parse('https://www.google.com/maps/search/?api=1&query=$koordinat');
+    // final Uri tautan = Uri.parse('google.navigation:q=$koordinat&mode=d');
 
     if(await canLaunchUrl(tautan)){
-      await launchUrl(tautan);
+      await launchUrl(tautan, mode: LaunchMode.externalApplication);
     }
     else{
       ScaffoldMessenger.of(context).showSnackBar(
