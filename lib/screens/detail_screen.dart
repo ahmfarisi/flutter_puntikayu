@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_puntikayu/models/wisata_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DetailScreen extends StatefulWidget {
   final WisataModel wisataModel;
@@ -12,6 +13,21 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
+
+  Future<void> _launchGoogleMaps() async {
+    final String koordinat = widget.wisataModel.koordinat;
+    final Uri tautan = Uri.parse('https://www.google.com/maps/search/?api=1&query=$koordinat');
+
+    if(await canLaunchUrl(tautan)){
+      await launchUrl(tautan);
+    }
+    else{
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Tidak dapat membuka lokasi: $koordinat')),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -221,6 +237,41 @@ class _DetailScreenState extends State<DetailScreen> {
                   ],
                 ),
               ),
+              // TOMBOL LOKASI
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 16,
+                  left: 16,
+                  right: 16,
+                  bottom: 0,
+                ),
+                child: Divider(color: Colors.grey.shade300),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: SizedBox(
+                  width: double.infinity, // Mengambil lebar penuh
+                  height: 50, // Tinggi tombol yang proporsional
+                  child: ElevatedButton.icon(
+                    onPressed: _launchGoogleMaps,
+                    icon: const Icon(Icons.location_on),
+                    label: const Text(
+                      'Lokasi',
+                      style: TextStyle(fontSize: 18),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      // Contoh styling, Anda bisa menyesuaikannya
+                      backgroundColor: Colors.red.shade700,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Tambahkan SizedBox di bawah tombol jika perlu ruang ekstra
+              const SizedBox(height: 16),
             ],
           ),
         ),
